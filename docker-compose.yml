@@ -2,6 +2,7 @@ version: '3.8'
 services:
 
   documentation-deployment-container:
+    container_name: documentation-deployment-container
     image: "oprabin/documentation-deployment:latest"
     ports:
      - "8080:8080"
