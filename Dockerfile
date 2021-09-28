@@ -6,4 +6,4 @@ RUN mvn -f /home/app/deployment-documentation/pom.xml clean package -X
 
 
 FROM axonivy/axonivy-engine:8.0 AS official-axon-engine
-COPY --chown=ivy:ivy --from=build-tool /home/app/deployment-documentation/target/deployment-documentation-1.0.0.iar deploy/deployment-documentation/
+COPY --chown=ivy:ivy --from=build-tool /home/app/deployment-documentation/target/deployment-documentation-2.0.0.iar deploy/deployment-documentation/
