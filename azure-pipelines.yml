@@ -24,7 +24,9 @@ stages:
       displayName: Build and push an image to docker hub.
       inputs:
         command: buildAndPush
+        repository: 'oprabin/documentation-deployment'
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        containerRegistry: 'dockerhub_oprabin'
         tags: |
           $(tag)
           latest
